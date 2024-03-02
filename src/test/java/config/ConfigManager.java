@@ -61,10 +61,10 @@ public class ConfigManager { // on the lessons: BaseTest.java
         else {
             throw new IllegalArgumentException("Invalid browser name: " + browser);
         }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-        driver.navigate().to("https://demoqa.com/");
+        driver.manage().window().maximize();//окно увелувеличится
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));//ожиожидает  открытее стрстраница
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));//ожыданиожидании  элемэлементов
+        driver.navigate().to("https://demoqa.com/");//открыоткрыть  на глглавной станци
     }
 
     // @AfterSuite
